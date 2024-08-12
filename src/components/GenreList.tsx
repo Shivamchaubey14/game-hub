@@ -30,7 +30,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
               onClick={() => onSelectGenre(genre)}
               fontWeight={genre.id === selectedGenre?.id ? 'bold' : 'normal'}
             >
-              {genre.name}
+              {genre.name.toUpperCase()}
             </Button>
           </HStack>
         </ListItem>
